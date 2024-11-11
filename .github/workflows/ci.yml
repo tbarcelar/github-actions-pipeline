@@ -1,4 +1,4 @@
-name: Python CI Pipeline
+name: Simple Python CI Pipeline
 
 on:
   push:
@@ -8,12 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3  # Atualizamos para a versão v3
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v4  # Atualizamos para a versão v4
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
@@ -21,4 +22,4 @@ jobs:
         run: pip install --upgrade pip
 
       - name: Run Python script
-        run: python main.py
+        run: python .github/workflows/script.py
