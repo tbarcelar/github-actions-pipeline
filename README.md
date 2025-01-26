@@ -34,6 +34,7 @@ Checkout: Clona o repositório no ambiente de execução.
 Configuração do Python: Configura o Python 3.x.
 Instalação de dependências: Atualiza o pip (não há dependências adicionais neste exemplo).
 Execução do script: Roda o arquivo script.py.
+
 O Script Python 🐍
 O arquivo script.py é um exemplo simples que imprime uma mensagem no console:
 
@@ -42,9 +43,12 @@ Como Usar 🚀
 Faça um push ou merge no branch main.
 Acesse a aba Actions no repositório para visualizar o progresso da pipeline.
 Verifique os logs para garantir que o script Python foi executado com sucesso.
+  
 Melhorias Futuras 🌟
 Adicionar testes automatizados com frameworks como pytest.
 Configurar a pipeline para instalar dependências listadas em um requirements.txt.
 Expandir o script para incluir funcionalidades mais complexas.
+
+   
 Autor: tbarcelar
 Licença: MIT 📜
