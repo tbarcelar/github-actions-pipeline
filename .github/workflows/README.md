@@ -18,34 +18,7 @@ A pipeline realiza as seguintes etapas ao detectar um `push` no branch `main`:
 
 ## Configuração da Pipeline 🔧
 
-O arquivo `ci.yml` define a pipeline. Aqui está um resumo das etapas:
-
-```yaml
-name: Simple Python CI Pipeline
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: pip install --upgrade pip
-
-      - name: Run Python script
-        run: python .github/workflows/script.py
+O arquivo `ci.yml` define a pipeline. 
 
 
 Explicação:
